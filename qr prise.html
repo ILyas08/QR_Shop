@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>QR Прайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Russo+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Russo One', sans-serif;
+        }
+
+        table {
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            flex: 1 1 auto;
+        }
+
+        td,
+        th {
+            padding: 10px
+        }
+
+        tr:nth-child(even) {
+            background-color: #DDD;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ccc;
+        }
+
+        tr:nth-child(1) {
+            background-color: #333;
+            color: #FFF;
+        }
+
+        tr:last-child {
+            background-color: #666;
+            color: #FFF;
+        }
+
+        td:nth-child(2),
+        td:nth-child(4) {
+            text-align: center;
+        }
+
+        td:nth-child(3) {
+            text-align: right;
+        }
+
+        #footer {
+            /* Блок подвала */
+            height: 150px;
+            /* Высота блока подвала */
+            background-color: #DDD;
+            /* Фон блока подвала */
+            margin-bottom: 30px;
+            /* Отступ снизу */
+            border-radius: 5px;
+            /* Закруглённые углы */
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+            /* Тень блока */
+            position: absolute;
+            left: 100;
+            bottom: 0;
+            width: 100%;
+            
+        }
+
+        #sidebar {
+            /* Блок сайдбара */
+            background-color: #ffffff;
+            /* Фон блока */
+            width: 730px;
+            /* Ширина блока */
+            padding: 10px;
+            /* Отступ текста от краёв */
+            float: center;
+            /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+            border-radius: 5px;
+            /* Закругляем углы блока */
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+            /* Задаём блоку тень */
+            text-align: center;
+            width="200" 
+
+        }
+
+        body {
+            background: #f2e8c9;
+            ;
+            /* Меняется фон экрана
+        }
+
+    </style>
+</head>
+
+<body lang="ru">
+    <h1>Прайс лист</h1>
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Дата</th>
+            <th>Модель</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <td>Видеокарта MSI GeForce RTX 3090</td>
+            <td>21.06.2022</td>
+            <td>VENTUS 3X OC</td>
+            <td>10000 рублей</td>
+        </tr>
+        <tr>
+            <td>Доставка</td>
+            <td>26.06.2022</td>
+            <td>-</td>
+            <td>500 рублей</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Общая цена</td>
+            <td>100500</td>
+        </tr>
+
+    </table>
+    <div id="sidebar">
+        <!--меню-->
+        <h3>На нашем сайте</h3>
+        <!--Картинки маркеров меню (галочки)-->
+        <p><a href="qr%20main%20.html">Товар</a></p>
+        <!--Прямая красная линия-->
+        <p><a href="qr%20instruction.html">Инструкция</a></p>
+        <hr width="720" color="red" size="5">
+        
+
+    </div>
+    <div id="footer">
+        <p class="fon"><strong>Телефон:<br> 8 (800) 853-53-53</strong> </p>
+        <p class="mail"><strong>E-mail<br>Kam@mail.ru</strong>
+        </p>
+        &copy; Ильяс
+    </div>
+    
+</body>
+
+</html>
